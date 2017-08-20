@@ -1,0 +1,14 @@
+sudo: required
+
+language: bash
+
+services:
+  - docker
+
+before_install:
+    - docker pull vect0r/hey
+    - docker build -t vect0r/hey .
+
+script:
+    - docker run --rm vect0r/hey -n 1000 -c 100 https://google.com
+
