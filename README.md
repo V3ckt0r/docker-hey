@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/V3ckt0r/docker-hey.svg?branch=master)](https://travis-ci.org/V3ckt0r/docker-hey)
 ## About this Repo
 Docker image for the [hey]: https://github.com/rakyll/hey http loadtest tool.
 
