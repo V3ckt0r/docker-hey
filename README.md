@@ -19,6 +19,6 @@ $ docker run --rm vect0r/hey
 
 #### Example
 ```
-$ docker run --rm  williamyeh/boom  \
+$ docker run --rm  vect0r/hey  \
       -n 1000 -c 100 https://google.com
 ```
