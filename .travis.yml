@@ -12,8 +12,8 @@ script:
     - docker run --rm vect0r/hey -n 1000 -c 100 https://google.com
 
 after_success:
-    - [ "$TRAVIS_BRANCH" == "master" ]; then
+    - if [ "$TRAVIS_BRANCH" == "master" ]; then
       docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-      docker push vect0r/hey
+      docker push vect0r/hey;
       fi
 
